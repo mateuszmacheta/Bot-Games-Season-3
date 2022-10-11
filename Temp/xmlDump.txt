@@ -1,0 +1,586 @@
+<root>
+    <!-- header starts -->
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container-fluid">
+          <!-- Automation Anywhere Logo -->
+          <img src="https://s3-us-west-2.amazonaws.com/aai-devportal-media/wp-content/uploads/2021/07/14173958/AAI_logo_140x50.png" alt=""/>
+          <strong class="navbar-brand text-center">Automation Anywhere Challenge Pages - Financial Transaction
+            Validation</strong>
+        </div>
+      </div>
+    </header>
+    <!-- header ends -->
+
+    <!-- Introduction container starts-->
+    <div class="container mt-3 bg-white shadow-lg rounded p-3">
+      <div class="financialvalidation__challenge-intro">
+        <div class="row">
+          <img class="banner px-5" height="120" src="images/banner_foodmart-grocery-corp.png" alt="Foodmart Grocery"/>
+          <a class="mx-auto banner" target="_blank" href="https://developer.automationanywhere.com/blog/challenge-pages">
+            <img src="https://s3-us-west-2.amazonaws.com/aai-devportal-media/wp-content/uploads/2021/10/13161853/DevPortalChallengeBanner-1.png"/></a>
+        </div>
+        <hr/>
+        <h1>Financial Transaction Validation</h1>
+        <p>
+          Foodmart Grocery Corp is trying to improve the way they capture their
+          books. They have a good amount of detail on recent financial
+          transactions, however the Supplier Name for each transaction is
+          missing. For each of the transactions provided below, lookup the
+          corresponding transaction in Rusty Bank.
+          <br/>
+          <br/>
+          Simple enough right? Not so fast… in an effort to get the best
+          possible rate on their savings, Foodmart has selected one of the least
+          reliable and lowest rated fictional banks - Rusty Bank. As you
+          interface with Rusty Bank, you may notice that their application is
+          unstable, frequently crashes, and even logs you out automatically.
+          Build a resilient automation that's able to lookup all transactions
+          even in the face of a less than reliable banking app.
+          <br/>
+          <br/>
+          Once all transactions have been validated, press submit to get your
+          final score!
+        </p>
+        <b>Rusty Bank Username:</b> finance_dept@foodmartgrocerycorp.com <br/><b>Rusty Bank Password:</b>
+        dR6Si6O&amp;?u1rIp2iSOz-
+        <div class="mt-2">
+          <a href="financialvalidation-applogin.html" target="_blank" class="btn btn-peters" role="button">Rusty Bank Login</a>
+        </div>
+      </div>
+    </div>
+    <!-- Introduction container ends-->
+
+    <!-- Card container starts-->
+    <div class="container pt-4 px-0">
+      <div class="row">
+        <!-- Transaction 1 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction1">
+          <form action="" method="" id="transactionId1">
+            <h4>Transaction 1</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber1" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate1" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount1" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount1" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier1" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 1 card starts -->
+
+        <!-- Transaction 2 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction2">
+          <form action="" method="" id="transactionId2">
+            <h4>Transaction 2</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber2" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate2" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount2" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount2" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier2" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 2 card ends -->
+      </div>
+
+      <div class="row">
+        <!-- Transaction 3 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction3">
+          <form action="" method="" id="transactionId3">
+            <h4>Transaction 3</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber3" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate3" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount3" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount3" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier3" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 3 card ends -->
+
+        <!-- Transaction 4 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction4">
+          <form action="" method="" id="transactionId4">
+            <h4>Transaction 4</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber4" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate4" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount4" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount4" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier4" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 4 card ends -->
+      </div>
+
+      <div class="row">
+        <!-- Transaction 5 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction5">
+          <form action="" method="" id="transactionId5">
+            <h4>Transaction 5</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber5" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate5" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount5" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount5" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier5" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 5 card ends -->
+
+        <!-- Transaction 6 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction6">
+          <form action="" method="" id="transactionId6">
+            <h4>Transaction 6</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber6" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate6" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount6" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount6" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier6" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 6 card ends -->
+      </div>
+
+      <div class="row">
+        <!-- Transaction 7 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction7">
+          <form action="" method="" id="transactionId7">
+            <h4>Transaction 7</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber7" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate7" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount7" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount7" class="form-control" placeholder="" required="required"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier7" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 7 card ends -->
+
+        <!-- Transaction 8 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction8">
+          <form action="" method="" id="transactionId8">
+            <h4>Transaction 8</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber8" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate8" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount8" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount8" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier8" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 8 card ends -->
+      </div>
+
+      <div class="row">
+        <!-- Transaction 9 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction9">
+          <form action="" method="" id="transactionId9">
+            <h4>Transaction 9</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber9" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate9" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount9" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount9" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier9" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 9 card ends -->
+
+        <!-- Transaction 10 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction10">
+          <form action="" method="" id="transactionId10">
+            <h4>Transaction 10</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber10" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate10" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount10" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount10" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier10" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 10 card ends -->
+      </div>
+
+      <div class="row">
+        <!-- Transaction 11 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction11">
+          <form action="" method="" id="transactionId11">
+            <h4>Transaction 11</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber11" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate11" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount11" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount11" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier11" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 11 card ends -->
+
+        <!-- Transaction 12 card starts -->
+        <div class="financialvalidation__card my-3 my-1 col-6" id="transaction12">
+          <form action="" method="" id="transactionId12">
+            <h4>Transaction 12</h4>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>PO Number</label>
+                <input type="text" id="PONumber12" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Date</label>
+                <input type="text" id="PaymentDate12" class="form-control" readonly=""/>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Payment Account</label>
+                <input type="text" id="PaymentAccount12" class="form-control" readonly=""/>
+              </div>
+              <div class="form-group col">
+                <label>Payment Amount</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                  <input type="text" id="PaymentAmount12" class="form-control" readonly=""/>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label>Supplier Name</label>
+                <input type="text" id="Supplier12" class="form-control" placeholder="" required="required"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Transaction 12 card ends -->
+      </div>
+
+      <hr/>
+      <div class="form-row flex-row-reverse">
+        <div class="form-group">
+          <!-- Submit button -->
+          <button type="button" class="btn btn-info" id="submitChallenge">
+            Submit
+          </button>
+        </div>
+        <div class="form-group col"></div>
+      </div>
+    </div>
+    <!-- Card container ends -->
+    <br/>
+
+    <!-- Start Modal -->
+    <div id="myModal" class="modal fade">
+      <div class="modal-dialog modal-confirm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="icon-box" id="icon-box">
+              <i class="material-icons"></i>
+            </div>
+          </div>
+          <div class="modal-banner"></div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h4 class="modal-title mx-auto mb-1" id="success-title">
+                    Awesome! Task Complete
+                  </h4>
+                  <span id="shareonsocial"></span>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <div class="card card-outline m-x-auto m-b-12">
+                    <div class="col-md-12 text-center bg-complete p-y-1" id="processing-time-head" style="-ms-flex-preferred-size: auto">
+                      <h2 class="score-label my-2">
+                        <i class="material-icons">alarm</i> Time
+                      </h2>
+                    </div>
+                    <div class="col-md-12 text-center p-y-1 bg-value" style="-ms-flex-preferred-size: auto">
+                      <h3 class="score-value my-3" id="processing-time">
+                        78 seconds
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 mb-2">
+                  <div class="card card-outline m-x-auto m-b-12">
+                    <div class="col-md-12 text-center bg-complete p-y-1" id="accuracy-head" style="-ms-flex-preferred-size: auto">
+                      <h2 class="score-label my-2">
+                        <i class="material-icons">speed</i> Accuracy
+                      </h2>
+                    </div>
+                    <div class="col-md-12 text-center p-y-1 bg-value" style="-ms-flex-preferred-size: auto">
+                      <h3 class="score-value my-3" id="accuracy">100%</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success btn-modal-ok" id="btn-modal" data-dismiss="modal">
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SUCCESS MODAL -->
+
+    <div id="spinner"></div>
+
+    </root>
