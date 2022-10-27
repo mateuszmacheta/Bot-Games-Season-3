@@ -3,6 +3,7 @@
   "description": "Bot Games Season 3: Imagine Virtual Edition - Financial Transaction Validation Intro",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Excel.Activities": "[2.16.0]",
     "UiPath.System.Activities": "[22.4.4]",
     "UiPath.UIAutomation.Activities": "[22.4.7]",
     "UiPath.WebAPI.Activities": "[1.13.0-preview]"
